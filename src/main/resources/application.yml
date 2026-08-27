@@ -43,6 +43,8 @@ spring:
 
 eureka:
   client:
+    fetch-registry: true
+    register-with-eureka: true
     serviceUrl:
       defaultZone: ${EUREKA_SERVER_URL:http://discovery.platform:8761/eureka/}
     registry-fetch-interval-seconds: 5
