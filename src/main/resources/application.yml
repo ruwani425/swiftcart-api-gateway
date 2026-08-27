@@ -30,15 +30,15 @@ spring:
             allowCredentials: false
       routes:
         - id: user-service
-          uri: lb://USER-SERVICE
+          uri: lb://user-service
           predicates:
             - Path=/api/v1/users, /api/v1/users/**
         - id: product-service
-          uri: lb://PRODUCT-SERVICE
+          uri: lb://product-service
           predicates:
             - Path=/api/v1/products, /api/v1/products/**
         - id: order-service
-          uri: lb://ORDER-SERVICE
+          uri: lb://order-service
           predicates:
             - Path=/api/v1/orders, /api/v1/orders/**
 
